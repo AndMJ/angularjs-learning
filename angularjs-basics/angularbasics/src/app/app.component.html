@@ -1,0 +1,6 @@
+<mat-toolbar color="primary">
+  <mat-icon>local_fire_department</mat-icon>
+  <span>Angular todo list</span>
+</mat-toolbar>
+
+<app-task (edit)="getEmit($event)" *ngFor="let t of todo" [task]="t"></app-task>
